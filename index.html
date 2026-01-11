@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Restaurant & Cafe Billing Software in Tamil Nadu | Tap2Bill</title>
+    <meta name="description" content="Tap2Bill is India’s best billing software for cafes, restaurants, hotels, bakeries and juice shops. Live dashboard, GST billing, 7-day free trial and affordable plans.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #FF5722 0%, #FF8A65 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 20s linear infinite;
+        width: max-content;
+      }
+      @keyframes dot-cycle {
+        0%, 100% { background-color: #FF5722; transform: scale(1.2); }
+        33%, 66% { background-color: #E5E7EB; transform: scale(1); }
+      }
+      .animate-dot-1 { animation: dot-cycle 20s infinite; }
+      .animate-dot-2 { animation: dot-cycle 20s infinite 6.66s; }
+      .animate-dot-3 { animation: dot-cycle 20s infinite 13.33s; }
+      
+      @keyframes progress-slide {
+        0% { width: 0%; left: 0%; }
+        50% { width: 40%; left: 30%; }
+        100% { width: 0%; left: 100%; }
+      }
+      .animate-progress-slide {
+        animation: progress-slide 20s linear infinite;
+      }
+    </style>
+
+  <script type="module" src="/src/index.tsx"></script>
+
+</head>
+  <body class="bg-white text-gray-900 overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>

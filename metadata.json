@@ -1,0 +1,7 @@
+{
+  "name": "Tap2Bill - Best Restaurant & Cafe Billing Software",
+  "description": "India's leading billing software for cafes, restaurants, and hotels. Features GST billing, live dashboards, and cloud backup. Located in Salem, Tamil Nadu.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
