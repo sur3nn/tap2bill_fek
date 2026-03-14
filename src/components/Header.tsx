@@ -84,7 +84,8 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            <button className="hidden lg:block bg-[#FF5722] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#E64A19] transition-colors shadow-lg shadow-orange-200">
+            <button className="hidden lg:block bg-[#FF5722] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#E64A19] transition-colors shadow-lg shadow-orange-200"
+              onClick={() => handleNav('pricing')}>
               7 Days Free Trial
             </button>
             <button 
