@@ -25,7 +25,7 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-44 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-[#FF5722] font-bold text-sm tracking-widest uppercase mb-4 block">Testimonials</span>

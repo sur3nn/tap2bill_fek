@@ -56,7 +56,7 @@ const App: React.FC = () => {
             <OwnersSection />
             <CustomersSection />
           
-<div className="relative">
+<div className="relative ">
   <HowItWorks />
 
   <img
