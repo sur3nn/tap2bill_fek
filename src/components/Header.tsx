@@ -44,8 +44,12 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
             className="flex items-center gap-2 group cursor-pointer" 
             onClick={() => handleNav('home')}
           >
-            <div className="w-10 h-10 bg-[#FF5722] rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
-              <span className="text-white font-black text-xl italic">T</span>
+            <div className="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+                     <img
+  src="/logo.png"
+  alt="Burger"
+  className="w-14 h-14"
+/>
             </div>
             <span className="text-2xl font-bold tracking-tight">Tap<span className="text-[#FF5722]">2Bill</span></span>
           </div>

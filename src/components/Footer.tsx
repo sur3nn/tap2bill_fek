@@ -16,8 +16,13 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="flex items-center gap-2 cursor-pointer" 
               onClick={() => onNavigate?.('home')}
             >
-              <div className="w-10 h-10 bg-[#FF5722] rounded-xl flex items-center justify-center">
-                <span className="text-white font-black text-xl italic">T</span>
+              <div className="w-14 h-14 bg-gray-100  rounded-xl flex items-center justify-center">
+                      
+                     <img
+  src="/logo.png"
+  alt="Burger"
+  className="w-14 h-14"
+/>
               </div>
               <span className="text-2xl font-bold tracking-tight">Tap<span className="text-[#FF5722]">2Bill</span></span>
             </div>
@@ -56,7 +61,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <Phone size={18} className="text-[#FF5722]" />
-                <span>+91 63692 47296</span>
+                <span>+91 9994555400</span>
               </div>
               <div className="flex items-start gap-3 text-gray-400">
                 <MapPin size={18} className="text-[#FF5722] mt-1" />
