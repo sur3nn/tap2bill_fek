@@ -55,8 +55,18 @@ const App: React.FC = () => {
             <Features />
             <OwnersSection />
             <CustomersSection />
-            <HowItWorks />
+          
+<div className="relative">
+  <HowItWorks />
+
+  <img
+    src="/device.webp"
+    alt="Phone"
+    className="absolute bottom-[-140px] left-1/2 -translate-x-1/2 w-[900px] z-[100] drop-shadow-2xl"
+  />
+</div>
             <Testimonials />
+            
             
             {/* Call to Action Section */}
             <section className="relative py-20 bg-gray-950 overflow-hidden">

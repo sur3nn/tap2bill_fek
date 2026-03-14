@@ -60,6 +60,8 @@ const HowItWorks: React.FC = () => {
             Start Your 7-Day Free Trial
           </button>
         </ScrollReveal>
+      
+
       </div>
     </section>
   );

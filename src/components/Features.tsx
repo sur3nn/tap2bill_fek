@@ -64,10 +64,12 @@ const Features: React.FC = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{f.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">{f.desc}</p>
               </div>
+              
             </ScrollReveal>
           ))}
         </div>
       </div>
+ 
     </section>
   );
 };

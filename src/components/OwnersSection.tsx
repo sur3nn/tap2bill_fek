@@ -61,7 +61,7 @@ const OwnersSection: React.FC = () => {
           <ScrollReveal direction="right" className="relative">
              <div className="relative z-10 animate-float">
                 <img 
-                  src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop" 
+                  src="/features_frame.webp" 
                   className="rounded-[3rem] shadow-2xl w-full max-w-lg mx-auto"
                   alt="POS Terminal"
                 />
