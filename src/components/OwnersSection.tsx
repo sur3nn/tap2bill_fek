@@ -63,7 +63,7 @@ const OwnersSection: React.FC = () => {
                 <img 
                   src="/features_frame.webp" 
                   className="rounded-[3rem] shadow-2xl w-full max-w-lg mx-auto"
-                  alt="POS Terminal"
+                  alt="Cloud POS software for restaurants cafes hotels and cloud kitchens in India"
                 />
              </div>
              {/* <div className="absolute -bottom-10 -right-10 bg-white p-6 rounded-3xl shadow-2xl z-20 max-w-[240px]">

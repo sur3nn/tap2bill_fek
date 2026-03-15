@@ -49,14 +49,14 @@ const Hero = () => {
             {/* BURGER BACKGROUND */}
           <img
   src="/hero_bg.webp"
-  alt="Burger"
+  alt="Restaurant POS billing system managing orders tables and billing"
   className="absolute right-[-350px] top-0 w-[700px] max-w-none z-20"
 />
 
             {/* PHONE IMAGE */}
             <img
               src="/hero_image.webp"
-              alt="Phone"
+              alt="Affordable restaurant billing software for small cafes and food shops"
               className="absolute right-[120px] top-[60px] w-[500px] z-20 drop-shadow-2xl"
             />
 

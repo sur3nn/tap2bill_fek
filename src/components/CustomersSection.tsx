@@ -43,8 +43,8 @@ const CustomersSection: React.FC = () => {
            <div>
              <img 
                   src="/for_customer.webp" 
-                  className="rounded-[3rem] shadow-2xl w-full max-w-lg mx-auto"
-                  alt="POS Terminal"
+                  className="rounded-[3rem]  w-full max-w-lg mx-auto"
+                  alt="Mobile POS billing system for cafe restaurant billing in India"
                 />
            </div>
           </ScrollReveal>

@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
             <div className="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
                      <img
   src="/logo.png"
-  alt="Burger"
+  alt="Tap2Bill cafe billing software dashboard with sales reports and billing"
   className="w-14 h-14"
 />
             </div>

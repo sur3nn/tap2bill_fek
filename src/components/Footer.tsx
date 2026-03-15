@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUp, Globe } from 'lucide-react';
 
 interface FooterProps {
   onNavigate?: (view: 'home' | 'about' | 'pricing' | 'contact') => void;
@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       
                      <img
   src="/logo.png"
-  alt="Burger"
+  alt="Fast POS billing software for restaurants with thermal bill printing"
   className="w-14 h-14"
 />
               </div>
@@ -60,11 +60,22 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <span>support@cmatrix.in</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
+  <Globe size={18} className="text-[#FF5722]" />
+  <a 
+    href="https://cmatrix.in/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="hover:text-[#FF5722] transition-colors"
+  >
+    cmatrix.in
+  </a>
+</div>
+              <div className="flex items-center gap-3 text-gray-400">
                 <Phone size={18} className="text-[#FF5722]" />
                 <span>+91 9994555400</span>
               </div>
               <div className="flex items-start gap-3 text-gray-400">
-                <MapPin size={18} className="text-[#FF5722] mt-1" />
+                <MapPin size={48} className="text-[#FF5722] mt-1" />
                 <span>First Floor, 246, Cuddalore Main Rd, Ammapet, Salem, Tamil Nadu 636003</span>
               </div>
             </div>
@@ -72,8 +83,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
         
         <div className="pt-10 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-gray-500 text-sm">© Copyrights 2025. Tap2Bill is a Trading Style of Cmatrix IT Solutions Ltd.</p>
-          <p className="text-gray-500 text-sm">Design & developed by <span className="text-white font-bold">CMATRIX</span></p>
+          <p className="text-gray-500 text-sm">© Copyrights 2026. Tap2Bill is a Trading Style of Cmatrix Techonology Pvt Ltd.</p>
+          <p className="text-gray-500 text-sm">Design & developed by <span className="text-white font-bold">CMATRIX Techonology</span></p>
         </div>
         
         <button 

@@ -61,7 +61,7 @@ const App: React.FC = () => {
 
   <img
     src="/device.webp"
-    alt="Phone"
+    alt="Restaurant billing software POS system dashboard for cafes and hotels in India"
     className="absolute bottom-[-140px] left-1/2 -translate-x-1/2 w-[900px] z-[100] drop-shadow-2xl"
   />
 </div>
@@ -74,7 +74,7 @@ const App: React.FC = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop" 
                   className="w-full h-full object-cover"
-                  alt="Background"
+                  alt="Cafe billing software interface showing fast POS billing and menu management"
                 />
                 <div className="absolute inset-0 bg-black/80"></div>
               </div>
@@ -89,10 +89,10 @@ const App: React.FC = () => {
                 
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <button className="bg-black text-white px-8 py-4 rounded-xl flex items-center gap-3 hover:bg-gray-900 transition-colors border border-gray-800">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-10" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Tap2Bill restaurant POS software used by cafes and food businesses in India" className="h-10" />
                   </button>
                   <button className="bg-black text-white px-8 py-4 rounded-xl flex items-center gap-3 hover:bg-gray-900 transition-colors border border-gray-800">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" className="h-10" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Cloud based restaurant billing software for cafes restaurants and hotels" className="h-10" />
                   </button>
                 </div>
               </div>
