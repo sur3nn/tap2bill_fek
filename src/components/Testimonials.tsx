@@ -125,7 +125,7 @@ const Testimonials: React.FC = () => {
     setIndex((prev) =>
   prev + 1 > testimonials.length - 3 ? 0 : prev + 1
 );
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
