@@ -1,5 +1,6 @@
-import React from 'react';
-import { CheckCircle, Target, Shield, Zap } from 'lucide-react';
+
+import React, { useState } from 'react';
+import { CheckCircle, Target, Shield, Zap, Minus, Plus } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
 const AboutUs: React.FC = () => {
@@ -47,6 +48,11 @@ const AboutUs: React.FC = () => {
     }
   ];
 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <div className="bg-white">
 
@@ -126,32 +132,51 @@ const AboutUs: React.FC = () => {
 
       {/* FAQ Section */}
       <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-4xl">
 
           <h2 className="text-4xl md:text-5xl font-black text-center text-gray-900 mb-16">
             Tap2Bill FAQ
           </h2>
 
-          <div className="space-y-8">
+          <div className="space-y-4">
 
             {faqs.map((faq, index) => (
-              <ScrollReveal
+              <div
                 key={index}
-                direction="up"
-                delay={index * 0.1}
+                className="bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-300"
               >
-                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                {/* Question */}
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full flex items-center justify-between p-6 text-left"
+                >
+                  <h3 className="text-lg font-bold text-gray-900">
                     {faq.q}
                   </h3>
 
+                  <span className="ml-4">
+                    {openIndex === index ? (
+                      <Minus className="w-5 h-5 text-gray-600" />
+                    ) : (
+                      <Plus className="w-5 h-5 text-gray-600" />
+                    )}
+                  </span>
+                </button>
+
+                {/* Answer */}
+                <div
+                  className={`px-6 transition-all duration-300 ease-in-out ${openIndex === index
+                      ? "max-h-40 pb-6 opacity-100"
+                      : "max-h-0 opacity-0 overflow-hidden"
+                    }`}
+                >
                   <p className="text-gray-600 leading-relaxed">
                     {faq.a}
                   </p>
-
                 </div>
-              </ScrollReveal>
+
+              </div>
             ))}
 
           </div>
