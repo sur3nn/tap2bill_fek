@@ -44,11 +44,11 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
             className="flex items-center gap-2 group cursor-pointer" 
             onClick={() => handleNav('home')}
           >
-            <div className="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+            <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
                      <img
-  src="/logo.png"
+  src="/logo.svg"
   alt="Tap2Bill cafe billing software dashboard with sales reports and billing"
-  className="w-14 h-14"
+  className="w-16 h-16"
 />
             </div>
             <span className="text-2xl font-bold tracking-tight">Tap<span className="text-[#FF5722]">2Bill</span></span>

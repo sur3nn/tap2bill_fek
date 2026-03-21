@@ -1,6 +1,8 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, ArrowUp, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUp, Globe, } from 'lucide-react';
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
+
 
 interface FooterProps {
   onNavigate?: (view: 'home' | 'about' | 'pricing' | 'contact') => void;
@@ -16,12 +18,12 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => onNavigate?.('home')}
             >
-              <div className="w-14 h-14 bg-gray-100  rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-100  rounded-xl flex items-center justify-center">
 
                 <img
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="Fast POS billing software for restaurants with thermal bill printing"
-                  className="w-14 h-14"
+                  className="w-16 h-16"
                 />
               </div>
               <span className="text-2xl font-bold tracking-tight">Tap<span className="text-[#FF5722]">2Bill</span></span>
@@ -77,6 +79,44 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="flex items-start gap-3 text-gray-400">
                 <MapPin size={48} className="text-[#FF5722] mt-1" />
                 <span>First Floor, 246, Cuddalore Main Rd, Ammapet, Salem, Tamil Nadu 636003</span>
+              </div>
+              {/* ✅ Social Media Added Here */}
+              <div className="pt-6">
+                <p className="text-sm text-gray-500 mb-3">Follow us</p>
+
+                <div className="flex items-center gap-3">
+
+                  {/* Instagram */}
+                  <a
+                    href="https://www.instagram.com/tap2bill/?hl=en "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-900 hover:bg-[#FF5722] transition-all duration-300 group"
+                  >
+                    <span className="text-gray-300 group-hover:text-white text-base">
+                      <FaInstagram />
+                    </span>
+                    <span className="text-sm text-gray-300 group-hover:text-white">
+                      Instagram
+                    </span>
+                  </a>
+
+                  {/* Facebook */}
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61581861857507#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-900 hover:bg-[#FF5722] transition-all duration-300 group"
+                  >
+                    <span className="text-gray-300 group-hover:text-white text-base">
+                      <FaFacebookF />
+                    </span>
+                    <span className="text-sm text-gray-300 group-hover:text-white">
+                      Facebook
+                    </span>
+                  </a>
+
+                </div>
               </div>
             </div>
           </div>

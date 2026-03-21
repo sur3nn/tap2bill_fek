@@ -6,17 +6,17 @@ import ScrollReveal from './ScrollReveal';
 const Pricing: React.FC = () => {
   const plans = [
     {
-      name: 'Starter',
-      price: '₹ 0',
-      period: '/ 7 Days Trial',
+      name: 'Basic',
+      price: '₹ 19',
+      // period: '/ 7 Days Trial',
       subtitle: 'For small shops',
       popular: false,
       features: [
-        'Fast POS Billing',
-        'Live Dashboard Access',
-        'GST-compliant Invoices',
-        'Email Support',
-        'Secure Cloud Backup'
+        '2 Users',
+        'Dine-in Billing',
+        'Takeaway Billing',
+        'Food Coin',
+
       ]
     },
     {
@@ -57,8 +57,14 @@ const Pricing: React.FC = () => {
         <ScrollReveal className="text-center mb-16">
           <span className="text-[#FF5722] font-bold text-sm tracking-widest uppercase mb-4 block">Simple and Affordable Pricing</span>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">Choose a plan that fits your business</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-            7-day free trial — ₹0. Cancel anytime. No hidden charges. All plans include support and updates.
+          <p className="flex items-center justify-center gap-3 text-gray-600 max-w-2xl mx-auto mb-10 text-center whitespace-nowrap overflow-hidden">
+            <span className="bg-[#FF5722]/10 text-[#FF5722] px-4 py-1.5 rounded-full text-sm font-semibold border border-[#FF5722]/20">
+              7 Days Free Trial
+            </span>
+            <span className="text-sm md:text-base truncate">
+              Cancel anytime. No hidden charges. All plans include support and updates.
+            </span>
+
           </p>
         </ScrollReveal>
 
@@ -89,7 +95,7 @@ const Pricing: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                
+
                 <button className={`w-full py-4 rounded-2xl font-black transition-all ${plan.popular ? 'bg-[#FF5722] text-white shadow-xl shadow-orange-500/20 hover:bg-[#E64A19]' : 'bg-gray-100 text-gray-900 hover:bg-gray-200'}`}>
                   {plan.name === 'Starter' ? 'Try for Free' : 'Request Pricing'}
                 </button>
@@ -97,7 +103,7 @@ const Pricing: React.FC = () => {
             </ScrollReveal>
           ))}
         </div>
-        
+
         <div className="text-center mt-12 text-gray-500 font-medium">
           Request pricing or book a demo. We will guide you to the right plan.
         </div>
