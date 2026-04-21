@@ -40,6 +40,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <li><button onClick={() => onNavigate?.('about')} className="hover:text-[#FF5722] transition-colors text-left">About us</button></li>
               <li><button onClick={() => onNavigate?.('pricing')} className="hover:text-[#FF5722] transition-colors text-left">Pricing</button></li>
               <li><button onClick={() => onNavigate?.('contact')} className="hover:text-[#FF5722] transition-colors text-left">Book a Demo</button></li>
+              <li><button onClick={() => onNavigate?.('contact')} className="hover:text-[#FF5722] transition-colors text-left"><a href="https://tap2bill.in/privacy-policy"target="_blank">Privacy & Policies</a></button></li>
+              <li><button className="hover:text-[#FF5722] transition-colors text-left"><a href="https://tap2bill.in/terms-of-service" target="_blank" >Terms of Services</a></button></li>
             </ul>
           </div>
 

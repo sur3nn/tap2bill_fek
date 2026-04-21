@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
@@ -40,42 +39,42 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
       <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-md shadow-lg py-3 border-b border-white/20' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <div 
-            className="flex items-center gap-2 group cursor-pointer" 
+          <div
+            className="flex items-center gap-2 group cursor-pointer"
             onClick={() => handleNav('home')}
           >
             <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform">
-                     <img
-  src="/logo.svg"
-  alt="Tap2Bill cafe billing software dashboard with sales reports and billing"
-  className="w-16 h-16"
-/>
+              <img
+                src="/logo.svg"
+                alt="Tap2Bill cafe billing software dashboard with sales reports and billing"
+                className="w-16 h-16"
+              />
             </div>
             <span className="text-2xl font-bold tracking-tight">Tap<span className="text-[#FF5722]">2Bill</span></span>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8 font-medium">
-            <button 
-              onClick={() => handleNav('home')} 
+            <button
+              onClick={() => handleNav('home')}
               className={`transition-colors ${currentView === 'home' ? 'text-[#FF5722]' : 'hover:text-[#FF5722]'}`}
             >
               Home
             </button>
-            <button 
-              onClick={() => handleNav('about')} 
+            <button
+              onClick={() => handleNav('about')}
               className={`transition-colors ${currentView === 'about' ? 'text-[#FF5722]' : 'hover:text-[#FF5722]'}`}
             >
               About us
             </button>
-            <button 
-              onClick={() => handleNav('pricing')} 
+            <button
+              onClick={() => handleNav('pricing')}
               className={`transition-colors ${currentView === 'pricing' ? 'text-[#FF5722]' : 'hover:text-[#FF5722]'}`}
             >
               Pricing
             </button>
-            <button 
-              onClick={() => handleNav('contact')} 
+            <button
+              onClick={() => handleNav('contact')}
               className={`transition-colors ${currentView === 'contact' ? 'text-[#FF5722]' : 'hover:text-[#FF5722]'}`}
             >
               Contact
@@ -83,18 +82,25 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
-            <button className="hidden lg:block bg-[#FF5722] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#E64A19] transition-colors shadow-lg shadow-orange-200"
-              onClick={() => handleNav('pricing')}>
-              7 Days Free Trial
-            </button>
-            <button 
-              className="md:hidden p-2"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? <X /> : <Menu />}
-            </button>
+          <div className="hidden lg:flex items-center gap-3">
+            {/* Login Button */}
+            <a href="https://tap2bill.in/login" target="_blank" rel="noopener noreferrer"
+  className="border-2 border-[#FF5722] text-[#FF5722] px-5 py-3 rounded-xl font-bold active:scale-95 transition-transform text-center">
+  Login
+</a>
+
+<a href="https://tap2bill.in/register" target="_blank" rel="noopener noreferrer"
+  className="bg-[#FF5722] text-white px-4 py-3 rounded-xl font-bold shadow-lg shadow-orange-500/20 active:scale-95 transition-transform text-center">
+  Register
+</a>
           </div>
+
+          <button
+            className="md:hidden p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X /> : <Menu />}
+          </button>
         </div>
 
         {/* Mobile Menu */}
@@ -105,9 +111,18 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
               <button onClick={() => handleNav('about')} className="p-3 text-left hover:bg-[#FF5722]/10 rounded-xl transition-colors font-bold">About us</button>
               <button onClick={() => handleNav('pricing')} className="p-3 text-left hover:bg-[#FF5722]/10 rounded-xl transition-colors font-bold">Pricing</button>
               <button onClick={() => handleNav('contact')} className="p-3 text-left hover:bg-[#FF5722]/10 rounded-xl transition-colors font-bold">Contact</button>
-              <button className="bg-[#FF5722] text-white px-6 py-4 rounded-xl font-bold shadow-lg shadow-orange-500/20 active:scale-95 transition-transform">
-                7 Days Free Trial
-              </button>
+              <div className="flex flex-col gap-3 pt-2">
+                {/* Mobile Login Button */}
+                <a href="https://tap2bill.in/login" target="_blank" rel="noopener noreferrer"
+  className="flex justify-center item-center border-2 border-[#FF5722] text-[#FF5722] px-6 py-2.5 rounded-full font-semibold hover:bg-[#FF5722]/10 transition-colors">
+  Login
+</a>
+
+<a href="https://tap2bill.in/register" target="_blank" rel="noopener noreferrer"
+  className="flex justify-center item-center bg-[#FF5722] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#E64A19] transition-colors shadow-lg shadow-orange-200">
+  Register
+</a>  
+              </div>
             </nav>
           </div>
         )}
